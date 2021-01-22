@@ -93,7 +93,7 @@ abstract class BaseStarTreeV2Test<R, A> {
   private static final String DIMENSION_D2 = "d2";
   private static final int DIMENSION_CARDINALITY = 100;
   private static final String METRIC = "m";
-  private static final String QUERY_FILTER = " WHERE d1 = 0 AND d2 < 10";
+  private static final String QUERY_FILTER = " WHERE d1 = 0 AND d2 < cast(10 as long)";
   private static final String QUERY_GROUP_BY = " GROUP BY d2";
 
   private ValueAggregator _valueAggregator;
